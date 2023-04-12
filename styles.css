@@ -1,0 +1,102 @@
+
+:root{
+    --minSize:50;
+    --maxSize:150;
+    box-sizing: border-box;
+}
+
+body{
+    
+    border: 1px solid black
+}
+
+.container{
+    text-align: center;
+
+    border: 1px solid rgb(0, 255, 0);
+    height: 500px;
+    width: 400px;
+    
+
+
+}
+
+.container-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "button_Clear button_Division button_Multiply button_Substract"
+    "button7 button8 button9 button_Add"
+    "button4 button5 button6 button_Add"
+    "button3 button2 button1 button_Equal"
+    "button0 button0 button_Decimal button_Equal";
+    padding: 0px;
+    align-items: stretch;
+    border: 10px solid rgb(99, 86, 99);
+    height: 75%;
+    
+}
+
+.button{
+    text-align: center;
+    border: 1px solid magenta;
+    min-width: 0;
+    min-height: 0;
+   
+   
+
+
+}
+
+#button_Clear{
+    grid-area:button_Clear;
+}
+#button_Division{
+    grid-area:button_Division;
+}
+#button_Multiply{
+    grid-area:button_Multiply;
+}
+#button_Substract{
+    grid-area:button_Substract;
+}
+#button_Add{
+    grid-area:button_Add;
+}
+#button_Equal{
+    grid-area:button_Equal;
+}
+#button_Decimal{
+    grid-area:button_Decimal;
+}
+#button7{
+    grid-area:button7;
+}
+#button8{
+    grid-area:button8;
+}
+#button9{
+    grid-area:button9;
+}
+#button4{
+    grid-area:button4;
+}
+#button5{
+    grid-area:button5;
+}
+#button6{
+    grid-area:button6;
+}
+#button1{
+    grid-area:button1;
+}
+#button2{
+    grid-area:button2;
+}
+#button3{
+    grid-area:button3;
+}
+#button0{
+    grid-area:button0;
+}
