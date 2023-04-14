@@ -1,5 +1,14 @@
 const displayScreen = document.querySelector('.display');
 const btnNumbers = document.querySelectorAll('.btn-numbers');
+const btnOperands = document.querySelectorAll('.btn-operands');
+const btnClear = document.getElementById('button_Clear');
+const btnDivision = document.getElementById('.button_Division');
+const btnMultiply = document.getElementById('.button_Multiply');
+const btnSubstract = document.getElementById('.button_Substract');
+const btnAdd = document.getElementById('.button_Add');
+const btnEqual = document.getElementById('.button_Equal');
+const btnDecimal = document.getElementById('.button_Decimal');
+
 
 
 let totalToDisplay = "0"
@@ -38,4 +47,19 @@ totalToDisplay = ""
 
 btnNumbers.forEach((Element) => {
     Element.addEventListener('click', buttonNumbers)
+});
+
+btnOperands.forEach((Element) => {
+    Element.addEventListener('click', () =>
+    {
+        console.log(Element.textContent)
+    })
+});
+
+btnClear.addEventListener('click',()=>{
+    console.log("ClearClear");
+    totalToDisplay = "0";
+    clickCounter = 0;
+    updateDisplay();
+    totalToDisplay = ""
 });
