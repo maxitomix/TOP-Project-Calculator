@@ -73,8 +73,20 @@ body{
 .button{
     text-align: center;
     border: 1px solid magenta;
-
+    cursor: pointer;
+    transition: .4s;
 }
+
+.button:hover{
+    background-color: rgb(131, 115, 160);
+    transition: .1s;
+}
+
+.button:active{
+    background-color: rgb(228, 131, 45);
+}
+
+
 
 .btn-operands{
     background-color: blueviolet;
