@@ -5,20 +5,51 @@
     box-sizing: border-box;
 }
 
-body{
-    
-    border: 1px solid black
+html{
+    background-color:  rgb(216, 216, 216);
 }
 
-.container{
-    text-align: center;
-
-    border: 1px solid rgb(0, 255, 0);
-    height: 500px;
-    width: 400px;
+body{
+    border: 1px solid black;
     
+    overflow: hidden;
+    
+}
+    
+.title{
+    text-align: center;
+    padding: 3%;
+    width: 75%;
+    font-size: 4rem;
+    color:rgb(238, 105, 28);
+    font-family: fantasy;
+    border: 1px solid green;
+    margin: auto;
+
+}    
 
 
+
+.container{
+    align-items: stretch;
+    text-align: stretch;
+    border: 1px solid rgb(0, 255, 0);
+    min-height: 500px;
+    min-width: 375px;
+    max-width: 500px;
+    background-color:  rgb(81, 73, 81);
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0;
+    margin-top: 2%
+    }
+
+.display{
+    padding: 10px 10px;
+    background-color: rgb(114, 231, 231);
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 2rem 0 2rem;   
 }
 
 .container-buttons{
@@ -32,21 +63,26 @@ body{
     "button3 button2 button1 button_Equal"
     "button0 button0 button_Decimal button_Equal";
     padding: 0px;
-    align-items: stretch;
-    border: 10px solid rgb(99, 86, 99);
-    height: 75%;
+    border: 2rem solid rgb(81, 73, 81);
+    place-items:stretch ;
+    place-content: stretch;
+    min-height: 400px ;
     
 }
 
 .button{
     text-align: center;
     border: 1px solid magenta;
-    min-width: 0;
-    min-height: 0;
-   
-   
 
+}
 
+.btn-operands{
+    background-color: blueviolet;
+    color: aqua;
+}
+
+.btn-numbers{
+    background-color: aqua;
 }
 
 #button_Clear{
