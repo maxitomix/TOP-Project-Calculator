@@ -10,21 +10,25 @@ html{
 }
 
 body{
-    border: 1px solid black;
-    
-    overflow: hidden;
+    /* background-color: aqua; */
+    width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top:3rem;
+  margin-bottom: auto;
+
     
 }
     
 .title{
-    text-align: center;
+    text-align: right;
     padding: 3%;
-    width: 75%;
-    font-size: 4rem;
+    width: 90%;
+    font-size: 1rem;
     color:rgb(238, 105, 28);
     font-family: fantasy;
     /* border: 1px solid green; */
-    margin: auto;
+    /* margin: auto; */
 
 }    
 
@@ -33,23 +37,24 @@ body{
 .container{
     align-items: stretch;
     text-align: stretch;
-    border: 1px solid rgb(0, 255, 0);
+    border: 3px solid black;
     min-height: 500px;
     min-width: 375px;
     max-width: 500px;
     background-color:  rgb(81, 73, 81);
-    /* display: flex;
-    flex-direction: column; */
     margin: 0;
-    margin-top: 2%
+    margin-top: 2%;
+    border-radius:1.5%;
+    /* background-color: blueviolet; */
     }
 
 .display{
-    padding: 10px 10px;
+    padding: 12px 12px;
     background-color: rgb(114, 231, 231);
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
-    margin: 0 2rem 0 2rem;   
+    margin: 0 .5rem .5rem .5rem;   
+    border: .5rem solid black
 }
 
 .container-buttons{
@@ -63,16 +68,17 @@ body{
     "button3 button2 button1 button_Equal"
     "button0 button0 button_Decimal button_Equal";
     padding: 0px;
-    border: 2rem solid rgb(81, 73, 81);
+    border: .5rem solid rgb(81, 73, 81);
     place-items:stretch ;
     place-content: stretch;
     min-height: 400px ;
+    gap: 2px;
     
 }
 
 .button{
     text-align: center;
-    border: 1px solid magenta;
+    border: 2px solid black;
     cursor: pointer;
     transition: .4s;
 }
