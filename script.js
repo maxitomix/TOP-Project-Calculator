@@ -81,7 +81,7 @@ btnOperands.forEach((Element) => {
     {       
             clickCounter = 0;
             pullDisplay();
-            newInput = Math.abs(parseInt(totalToDisplay));
+            newInput = Math.abs(parseFloat(totalToDisplay));
             console.log("new input:",newInput);
             console.log("operand:",operand);
             console.log("last operation:",lastOperation);
@@ -116,6 +116,18 @@ btnOperands.forEach((Element) => {
                             accumulator = accumulator - newInput
                             console.log("acumulator +",accumulator);
                             lastOperation = "-";
+                            break;
+
+                    case "*": 
+                            accumulator = accumulator * newInput
+                            console.log("acumulator +",accumulator);
+                            lastOperation = "*";
+                            break;
+
+                    case "/": 
+                            accumulator = accumulator / newInput
+                            console.log("acumulator +",accumulator);
+                            lastOperation = "/";
                             break;
                 }
             }
